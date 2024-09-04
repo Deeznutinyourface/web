@@ -7,5 +7,13 @@
          contador.textContent = valorAtual+1;
          botaoAumentar.classList.add("btn");
          botaoDiminuir.classList.remove("btn");
- });
+ 
+        },
+  botaoDiminuir.addEventListener("click",()=>{
+        const valorAtual = Number(contador.textContent);
+         contador.textContent = valorAtual-1;
+         botaoDiminuir.classList.add("btn");
+         botaoAumentar.classList.remove("btn");
+         }
 
+    ));
